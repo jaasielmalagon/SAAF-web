@@ -59,126 +59,82 @@
 	<section id="portfolio">	
         <div class="container">
             <div class="center">
-               <p>Te damos la bienvenida a nuestro simulador</p>
+               <h1 id="simulador">Te damos la bienvenida a nuestro simulador</h1>
+               <p>Contesta las siguientes preguntas, para verificación de solicitud de préstamo.</p>
             </div>
-
-            <ul class="portfolio-filter text-center">
-                <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Creative</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".html">Photography</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Web Development</a></li>
-            </ul><!--/#portfolio-filter-->
-		</div>
-		<div class="container">
-            <div class="">
-                <div class="portfolio-items">
-                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <div class="col-md-6 col-md-offset-3">
+                    <div id="sendmessage">Su mensaje ha sido enviado. Gracias...</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <p>Ingrese su nombre completo.</p>
+                            <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>Ingrese su correo.</p>
+                            <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>          
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>1.	¿Es necesario para usted solicitar un crédito en este momento?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>        
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>2.   ¿Cuenta con un fondo de emergencia que le permita cubrir sin inconvenientes sus gastos por seis meses en caso de quedarse sin empleo, o enfermarse, entre otros?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>           
-                    </div><!--/.portfolio-item-->
-          
-                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>3.   ¿Está destinando menos del 30 por ciento de sus ingresos mensuales al pago de deudas y a sus ahorros?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>      
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>4.   ¿Sabe que utilizar el préstamo para aumentar su ingreso mensual puede generar un problema de sobreendeudamiento?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>         
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>5.   ¿Cuenta con un trabajo estable que le permita cubrir mes a mes las cuotas del nuevo crédito y el resto de sus gastos?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>          
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div> 
+                        <p>6.   ¿Tiene claro cuánto deberá asumir mensualmente por la nueva obligación y el valor total (incluyendo intereses) que terminará pagando por el crédito solicitado?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
                             </div>
-                        </div>          
-                    </div><!--/.portfolio-item-->
+                        <p>7.   ¿El monto que piensa solicitar será para invertir o le permitirá generar rendimientos en el futuro?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                            </div>
+                        <p>8.   ¿Tiene claras las tasas de interés que ofrecen las diferentes entidades bancarias?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                            </div>
+                        <p>9.   ¿Ha realizado una proyección con su presupuesto actual e hipotético que le permita conocer si podría cubrir todas sus obligaciones con una deuda extra?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                            </div>
+                        <p>10.  Asumiendo la deuda adicional ¿podrá continuar ahorrando mensualmente?</p>
+                            <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aqui" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validation"></div>
+                            </div>
+                        
+                        <div class="text-center"><button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Enviar Respuestas</button></div><br>
+                    </form>                       
                 </div>
-            </div>
-        </div>
-    </section><!--/#portfolio-item-->
+            </div><!--/.row-->
+            
+        </section>
 	
 
 	<footer>
