@@ -69,13 +69,13 @@ a:hover {
 }
 
 #breadcrumb {
-	background-color: #FF8000;
+	background-color: #ff570d;
 	margin-top: -20px;
 }
 
 .breadcrumb { 
   list-style: none;
-  background-color: #FF8000;
+  background-color: #ff570d;
   border-radius: 0px;
   padding:3px 10px;
 }
@@ -90,7 +90,7 @@ a:hover {
   Menu and Navigation
 ============================ */
 .navigation  {
-	background-color:#FF00BF;
+	background-color:#bd0035;
 	padding:0;
 }
 
@@ -1200,6 +1200,6 @@ a.scrollup:hover{
     text-align: center;
     background-color: #888;
     color:#333;
-    font-size:60px;
+    font-size:40px;
     background-image: url("../images/fondo-menu.png");
 }
