@@ -1,4 +1,3 @@
-
 /* ==== Google font ==== */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 @import url('font-awesome.css');
@@ -19,7 +18,7 @@ body {
 
 hi,h2,h3,h4,h5,h6 {
 	color:#333;
-	line-height:1.1em;
+	line-height:1.1em;      
 }
 
 p {
@@ -87,7 +86,7 @@ a:hover {
 }
 
 /*===========================
-  Menu and Navigation
+  Menu y navegacion
 ============================ */
 .navigation  {
 	background-color:#bd0035;
@@ -105,6 +104,9 @@ a:hover {
 }
 .navbar-brand h1 span {
 	color: #1BBD36;
+}
+#logo-avan{
+    background-image: url("images/menu-logo.png");
 }
 
 .menu {
@@ -368,7 +370,7 @@ a:hover {
   color:#000;
 }
 
-/* --- about us --- */
+/* --- Historia --- */
 .aboutus {
 	padding:50px;
 }
@@ -643,7 +645,7 @@ ul.social-network li a {
 	color:#f00;
 }
 
-/* --- portfolio --- */
+/* --- simulador --- */
 
 #portfolio .center p {
 	margin-top:50px;
@@ -1093,7 +1095,7 @@ ul.sidebar-gallery {
   display: inline-block;
 }
 
-/* --- contact --- */
+/* --- Contactanos --- */
 #contact-page{
   padding-top: 0;
   background:#fff;
